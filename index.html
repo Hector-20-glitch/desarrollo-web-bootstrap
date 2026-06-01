@@ -2,126 +2,272 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Primer Trabajo</title>
-
+    <title>Landing Page Bootstrap y Sass</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="bg-light">
 
-    <header>
-        <nav class="navbar bg-dark">
-            <div class="container">
-                <h1 class="text-white text-center w-100 fw-bold font-monospace">
-                    Pagina de prueba
-                </h1>
-            </div>
-        </nav>
-    </header>
-
-    <section class="bg-primary py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
         <div class="container">
 
-            <div class="row text-center">
+            <a class="navbar-brand fw-bold" href="#">
+                Mi Empresa
+            </a>
 
-                <div class="col-12 col-md-4">
-                    <p class="text-white fs-4 font-monospace">
-                        Inicio
-                    </p>
-                </div>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
 
-                <div class="col-12 col-md-4">
-                    <p class="text-white fs-4 font-monospace">
-                        Productos
-                    </p>
-                </div>
+                <span class="navbar-toggler-icon"></span>
 
-                <div class="col-12 col-md-4">
-                    <p class="text-white fs-4 font-monospace">
-                        Registros
-                    </p>
-                </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+
+                </ul>
+
             </div>
+
         </div>
+
+    </nav>
+
+    <section class="bg-primary text-white text-center py-5">
+
+        <div class="container">
+
+            <h1 class="display-4 fw-bold">
+                Bienvenido a Nuestra Landing Page
+            </h1>
+
+            <p class="lead">
+                Proyecto desarrollado con Bootstrap y Sass.
+            </p>
+
+            <button class="btn btn-light btn-lg">
+                Más información
+            </button>
+
+        </div>
+
     </section>
 
-    <main>
+    <div class="container mt-4">
 
-        <div class="container mt-5">
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card shadow-lg rounded-4 h-100">
-                        <div class="card-body text-center">
-                            <h3 class="text-primary fw-bold font-monospace">
-                                Caja 1
-                            </h3>
-                            <p>
-                                Contenido de la caja 1
-                            </p>
-                        </div>
+        <div class="alert alert-success text-center">
+
+            Bootstrap y Sass implementados correctamente.
+
+        </div>
+
+    </div>
+
+    <section class="container my-5">
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="text-primary">
+                            Servicio 1
+                        </h3>
+
+                        <p>
+                            Información del servicio ofrecido.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Ver más
+                        </button>
+
                     </div>
+
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card shadow-lg rounded-4 h-100">
-                        <div class="card-body text-center">
-                            <h3 class="text-success fw-bold font-monospace">
-                                Caja 2
-                            </h3>
-                            <p>
-                                Contenido de la caja 2
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card shadow-lg rounded-4 h-100">
-                        <div class="card-body text-center">
-                            <h3 class="text-danger fw-bold font-monospace">
-                                Caja 3
-                            </h3>
-                            <p>
-                                Contenido de la caja 3
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card shadow-lg rounded-4 h-100">
-                        <div class="card-body text-center">
-                            <h3 class="text-warning fw-bold font-monospace">
-                                Caja 4
-                            </h3>
-                            <p>
-                                Contenido de la caja 4
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="text-success">
+                            Servicio 2
+                        </h3>
+
+                        <p>
+                            Información del servicio ofrecido.
+                        </p>
+
+                        <button class="btn btn-success">
+                            Ver más
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="text-danger">
+                            Servicio 3
+                        </h3>
+
+                        <p>
+                            Información del servicio ofrecido.
+                        </p>
+
+                        <button class="btn btn-danger">
+                            Ver más
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="text-warning">
+                            Servicio 4
+                        </h3>
+
+                        <p>
+                            Información del servicio ofrecido.
+                        </p>
+
+                        <button class="btn btn-warning">
+                            Ver más
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-    </main>
+    </section>
 
-    <footer class="bg-dark mt-5 py-3">
+    <section class="container mb-5">
 
-        <div class="container">
-            <p class="text-center text-white m-0">
-                Trabajo realizado con Bootstrap
+        <div class="tarjeta-sass">
+
+            <h2>Sección creada con Sass</h2>
+
+            <p>
+                Esta tarjeta utiliza variables y anidación de Sass.
             </p>
+
         </div>
+
+    </section>
+
+    <section class="container mb-5">
+
+        <div class="card shadow">
+
+            <div class="card-body">
+
+                <h3 class="mb-4">
+                    Contáctanos
+                </h3>
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Nombre
+                        </label>
+
+                        <input type="text" class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Correo
+                        </label>
+
+                        <input type="email" class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Mensaje
+                        </label>
+
+                        <textarea class="form-control" rows="4"></textarea>
+
+                    </div>
+
+                    <button class="btn btn-primary">
+                        Enviar
+                    </button>
+
+                    <button class="btn btn-secondary">
+                        Cancelar
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+
+        <p class="m-0">
+            © 2026 Landing Page Bootstrap y Sass
+        </p>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
 </html>
+```

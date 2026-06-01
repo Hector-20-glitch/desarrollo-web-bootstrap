@@ -1,0 +1,19 @@
+$color-principal: #0d6efd;
+$radio-borde: 20px;
+
+.tarjeta-sass {
+    background-color: $color-principal;
+    color: white;
+    padding: 30px;
+    border-radius: $radio-borde;
+    text-align: center;
+
+    h2 {
+        font-weight: bold;
+    }
+
+    &:hover {
+        transform: scale(1.03);
+        transition: 0.3s;
+    }
+}
